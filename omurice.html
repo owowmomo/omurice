@@ -1,0 +1,88 @@
+<div id="booking-form" class="content-form">
+	<form method="post" action="https://formspree.io/f/xgejrwjd">
+		<fieldset id="booking-reservation-fieldset">
+			<legend>ご予約</legend>
+			<table>
+				<tr>
+					<th>予約／Reservation<br>【DD/MM/YY】</th>
+					<td>
+						ディナー予約(Dinner Reservations)<br>
+						5/11/2023　19:50	
+					</td>
+				</tr>
+				<tr>
+					<th><label for="client-adult">人数／<br>Number of people</label></th>
+					<td>
+						<div class="input-number">
+							<label for="client-adult">大人／adult</label><br>					
+							<input id="client-adult" type="text" class="content-text small right" name="booking[client][adult]" value="1" maxlength="5"> 
+						</div>
+						<div class="input-number">
+							<label for="client-child">小人／child</label><br>					
+							<input id="client-child" type="text" class="content-text small right" name="booking[client][child]" value="0" maxlength="5"> 
+						</div>
+					</td>
+				</tr>
+			</table>
+		</fieldset>
+		
+		<fieldset id="booking_client-fieldset">
+			<legend>ご連絡先／Your contact information</legend>
+			<span class="required">※</span>の項目は必須です。
+			<span class="required">※</span>is Required item
+			<table>
+				<tr>
+					<th><label for="client-name">お名前／NAME(<span class="required">※</span>)</label></th>
+					<td>
+						<input id="client-name" class="content-text medium" type="text" name="booking[client][name]" value="" maxlength="100" />
+					</td>
+				</tr>
+				<tr>
+					<th><label for="client-email">E-Mail(<span class="required">※</span>)</label></th>
+					<td>
+						<input id="client-email" class="content-text fat" type="text" name="booking[client][email]" value="" maxlength="100" />
+					</td>
+				</tr>
+				<tr>
+					<th><label for="client-email2">E-Mail(確認用)／Re-enter for confirmation(<span class="required">※</span>)</label></th>
+					<td>
+						<input id="client-email2" class="content-text fat" type="text" name="booking[client][email2]" value="" maxlength="100" />
+					</td>
+				</tr>
+				<tr>
+					<th><label for="client-country">国名／Country Name</label></th>
+					<td>
+						<input id="client-country" class="content-text medium" type="text" name="booking[client][country]" value="" maxlength="10" />
+					</td>
+				</tr>
+				<tr>
+					<th><label for="client-tel">電話番号／phone number(<span class="required">※</span>)</label></th>
+					<td>
+						<input id="client-tel" class="content-text medium" type="text" name="booking[client][tel]" value="" maxlength="20" />
+					</td>
+				</tr>
+			</table>
+		</fieldset>
+		
+		<fieldset id="booking-message-fieldset">
+			<legend>ご連絡事項／message</legend>
+			<table>
+				<tr>
+					<th><label for="booking-note">メッセージ</label></th>
+					<td>
+						<textarea id="booking-note" class="content-text fat" name="booking[note]" rows="5" cols="200"></textarea>
+					</td>
+				</tr>
+			</table>
+		</fieldset>
+		
+		<div id="action-button" style="text-align: center">
+			<button type="submit" name="reserve_action" value="validate">予約確認／booking confirmation</button>
+		</div>
+		<input type="hidden" name="nonce" value="59b6125730" />
+		<input type="hidden" name="action" value="validate" />
+		<input type="hidden" name="booking[article_id]" value="6" />
+		<input type="hidden" name="booking[booking_time]" value="1699213800" />
+		<input type="hidden" name="booking[user_id]" value="0" />
+	</form>
+</div>
